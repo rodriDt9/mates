@@ -1,0 +1,336 @@
+/*reset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+/*MENU*/
+.header nav {
+  background-color: rgb(247, 127, 147);
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 1.5rem;
+
+
+
+}
+
+.nav .ul {
+
+  width: 26rem;
+  display: flex;
+  justify-content: space-between;
+  display: fixed;
+}
+
+.ul a {
+  color: green;
+
+}
+
+.productos li {
+  display: none;
+}
+
+
+
+.logo a {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.imagenPortada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../img/brazilian-chimarrao.webp);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  color: whitesmoke;
+
+}
+
+.imagenCaja {
+  width: 30%;
+}
+
+h1 {
+  font-size: 3.5rem;
+  border: solid;
+  text-transform: uppercase;
+}
+
+.imagenParrafo {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+
+
+/*MAIN*/
+
+.contenedor {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "contenedorTitulo contenedorTitulo contenedorParrafo"
+    "contenedorImagenUno contenedorImagenDos contenedorImagenTres "
+
+  ;
+
+  grid-row-gap: 10px;
+  grid-column-gap: 15px
+}
+
+.contenedorTitulo {
+  grid-area: contenedorTitulo;
+  color: white;
+  padding: 1.5rem;
+  background-color: pink;
+  text-align: space;
+  font-size: 1.3rem;
+
+
+}
+
+.contenedorParrafo {
+  grid-area: contenedorParrafo;
+  color: white;
+  padding: 1.5rem;
+  background-color: pink;
+  font-size: 1.3rem;
+
+}
+
+.contenedorImagenUno {
+  grid-area: contenedorImagenUno;
+  background-color: pink;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.contenedorImagenDos {
+  grid-area: contenedorImagenDos;
+  background-color: pink;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.contenedorImagenTres {
+  grid-area: contenedorImagenTres;
+  background-color: pink;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+
+}
+
+.divMate {
+  font-size: 2rem;
+  color: white;
+  background: pink;
+  margin-top: 18px;
+  justify-content: center;
+  height: 40rem;
+  background-image: url(../img/R.jpg);
+}
+
+.divMate h4 {
+  justify-items: center;
+  text-align: center;
+  padding: 100px;
+  font-size: 3rem;
+
+}
+
+.divMate p {
+  justify-items: center;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+
+/*footer*/
+
+.cajaTres {
+  display: grid;
+  background-color: rgb(247, 127, 147);
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 35px;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+
+
+
+  grid-template-areas: "cajaTresFace cajaTresInsta cajaTresWhat "
+    "parrafo parrafo ";
+
+
+}
+
+.cajaTresface {
+  grid-area: cajaTreFace;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.cajaTresInsta {
+  grid-area: cajaTresInsta;
+
+
+}
+
+.cajaTresWhat {
+  grid-area: cajaTresWhat;
+
+}
+
+.parrafo {
+  grid-area: p;
+  display: flex;
+  margin-top: 30px;
+
+
+}
+
+/*Main Productos*/
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "cajaDivH cajaDivH cajaDivH"
+    "cajaDivP cajaDivP cajaDivP"
+    "cajaDivImagen cajaDivImagenDos cajaDivImagenTres";
+  grid-row-gap: 10px;
+  grid-column-gap: 15px
+}
+
+.section {
+  margin-top: 20px;
+  background-image: linear-gradient(rgb(121, 104, 104), rgb(170, 88, 88)), url(../img/fondo2.jpg);
+  background-position: center;
+  color: white;
+}
+
+.cajaDivH {
+  grid-area: cajaDivH;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cajaDivP {
+  grid-area: cajaDivP;
+  text-align: center;
+  justify-items: center;
+  margin-top: 170px;
+}
+
+.cajaDivImagen {
+  grid-area: cajaDivImagen;
+  margin-top: 240px;
+  text-align: center;
+}
+
+.cajaDivImagenDos {
+  grid-area: cajaDivImagenDos;
+  margin-top: 240px;
+  text-align: center;
+}
+
+.cajaDivImagenTres {
+  grid-area: cajaDivImagenTres;
+  margin-top: 240px;
+  text-align: center;
+}
+
+/*Main Galeria*/
+
+.contenedorDiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "contenedorDivTitulos contenedorDivTitulos contenedorDivParrafo"
+    "contenedorDivImg contenedorDivImgDos contenedorDivImgTres "
+
+  ;
+
+  grid-row-gap: 10px;
+  grid-column-gap: 15px
+}
+
+.contenedorDivTitulos{
+  grid-area: contenedorDivTitulos;
+  color: white;
+  padding: 1.5rem;
+  background-color: pink;
+  text-align: space;
+  font-size: 1.3rem;
+}
+
+.contenedorDivParrafo{
+  grid-area: contenedorDivParrafo;
+  color: white;
+  padding: 1.5rem;
+  background-color: pink;
+  font-size: 1.3rem;
+}
+
+.contenedorDivImg{
+  grid-area: contenedorDivImg;
+  background-color: pink;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.contenedorDivImgDos{
+  grid-area: contenedorDivImgDos;
+  background-color: pink;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.contenedorDivImgTres{
+  grid-area: contenedorDivImgTres;
+  background-color: pink;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+
+}
+
+
