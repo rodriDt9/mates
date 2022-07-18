@@ -285,7 +285,7 @@ h1 {
   grid-column-gap: 15px
 }
 
-.contenedorDivTitulos{
+.contenedorDivTitulos {
   grid-area: contenedorDivTitulos;
   color: white;
   padding: 1.5rem;
@@ -294,7 +294,7 @@ h1 {
   font-size: 1.3rem;
 }
 
-.contenedorDivParrafo{
+.contenedorDivParrafo {
   grid-area: contenedorDivParrafo;
   color: white;
   padding: 1.5rem;
@@ -302,7 +302,7 @@ h1 {
   font-size: 1.3rem;
 }
 
-.contenedorDivImg{
+.contenedorDivImg {
   grid-area: contenedorDivImg;
   background-color: pink;
   justify-content: center;
@@ -312,7 +312,7 @@ h1 {
   font-size: 1.3rem;
 }
 
-.contenedorDivImgDos{
+.contenedorDivImgDos {
   grid-area: contenedorDivImgDos;
   background-color: pink;
   justify-content: center;
@@ -322,7 +322,7 @@ h1 {
   font-size: 1.3rem;
 }
 
-.contenedorDivImgTres{
+.contenedorDivImgTres {
   grid-area: contenedorDivImgTres;
   background-color: pink;
   justify-content: center;
@@ -334,3 +334,20 @@ h1 {
 }
 
 
+/*animacion github desafio- mates-2*/
+
+
+.animacion{
+  text-align: center;
+  margin: 2px;
+  color:blue;
+  font-size: 1.3rem;
+}
+
+.animacion:hover{
+  background-color: red;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  
+}
